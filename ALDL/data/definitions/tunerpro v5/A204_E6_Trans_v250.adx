@@ -1,0 +1,2791 @@
+<ADXFORMAT version="1.01">
+  <!-- Written 05/06/2021 02:37:38 -->
+  <ADXHEADER>
+    <guid>c5731267-9d67-4125-9375-50fb55e1e3a9</guid>
+    <flags>0x10001</flags>
+    <objectcount>218</objectcount>
+    <userversion>v250</userversion>
+    <author>93V8S10</author>
+    <desc>A204 Mode 1, Message 0 adx file for 16168625, 16156930, 16196395, and 16197427 PCM using $E6 code.</desc>
+    <baud>8192</baud>
+    <DEFAULTS datasizeinbits="8" sigdigits="2" outputtype="3" baud="0" signed="0" lsbfirst="0" float="0" />
+    <monitorcmd>COMMAND0MAC</monitorcmd>
+  </ADXHEADER>
+
+  <ADXMONITOR id="MONITOR" idhash="0xEFCE2DD1" title="Monitor">
+    <mainbkgcolor>0x00FFFFFF</mainbkgcolor>
+    <plotbkgcolor>0x00F0F0F0</plotbkgcolor>
+    <plotoutlinecolor>0x00000000</plotoutlinecolor>
+    <titlecolor>0x00000000</titlecolor>
+    <timeaxiscolor>0x00000000</timeaxiscolor>
+    <entrycount>0</entrycount>
+  </ADXMONITOR>
+
+  <ADXDASHBOARD id="MAINDASH" idhash="0x7A2F048C" title="Main Dash">
+    <bkgrndcolor>0x00808080</bkgrndcolor>
+    <entrycount>25</entrycount>
+    <ADXDGENTRY gaugetype="0" itemidhash="0xDE688F30" left="3" top="0" right="24" bottom="37" arcmax="300" bkgndcolor="0x00808080" curvaltxtcolor="0x00000000" facecolor="0x00FFFFFF" needlecolor="0x000000FF" mintickcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xDE68FC50" left="27" top="0" right="48" bottom="37" arcmax="300" bkgndcolor="0x00808080" curvaltxtcolor="0x00000000" facecolor="0x00FFFFFF" needlecolor="0x000000FF" mintickcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xCD534A5B" left="51" top="0" right="72" bottom="37" arcmax="300" bkgndcolor="0x00808080" curvaltxtcolor="0x00000000" facecolor="0x00FFFFFF" needlecolor="0x000000FF" mintickcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xCD53505B" left="75" top="0" right="96" bottom="37" arcmax="300" bkgndcolor="0x00808080" curvaltxtcolor="0x00000000" facecolor="0x00FFFFFF" needlecolor="0x000000FF" mintickcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xDE6BBE70" left="0" top="37" right="15" bottom="58" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="2" itemidhash="0xCD53C65B" left="15" top="37" right="29" bottom="58" bordercolor="0x00000000" setbkgndcolor="0x00AAFFAA" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xDE68F210" left="29" top="37" right="43" bottom="58" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xDE6896D0" left="43" top="37" right="57" bottom="58" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="2" itemidhash="0xCD53DC5B" left="57" top="37" right="71" bottom="58" bordercolor="0x00000000" setbkgndcolor="0x00AAFFAA" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xDE6A1C50" left="71" top="37" right="85" bottom="58" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xDE6BA930" left="85" top="37" right="100" bottom="58" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="2" itemidhash="0xDE6BBFB0" left="0" top="58" right="15" bottom="79" bordercolor="0x00000000" setbkgndcolor="0x00AAFFAA" />
+    <ADXDGENTRY gaugetype="2" itemidhash="0xCD509F1B" left="15" top="58" right="29" bottom="79" bordercolor="0x00000000" setbkgndcolor="0x00AAFFAA" />
+    <ADXDGENTRY gaugetype="2" itemidhash="0xCD5081DB" left="29" top="58" right="43" bottom="79" bordercolor="0x00000000" setbkgndcolor="0x00AAFFAA" />
+    <ADXDGENTRY gaugetype="2" itemidhash="0xCD53325B" left="43" top="58" right="57" bottom="79" bordercolor="0x00000000" setbkgndcolor="0x00AAFFAA" />
+    <ADXDGENTRY gaugetype="2" itemidhash="0xCD52F81B" left="57" top="58" right="71" bottom="79" bordercolor="0x00000000" setbkgndcolor="0x00AAFFAA" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xCD52145B" left="71" top="58" right="85" bottom="79" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xCD53C13B" left="85" top="58" right="100" bottom="79" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="2" itemidhash="0xDE6BA0B0" left="0" top="79" right="15" bottom="100" bordercolor="0x00000000" setbkgndcolor="0x00AAFFAA" />
+    <ADXDGENTRY gaugetype="2" itemidhash="0xCD52F85B" left="15" top="79" right="29" bottom="100" bordercolor="0x00000000" setbkgndcolor="0x00AAFFAA" />
+    <ADXDGENTRY gaugetype="2" itemidhash="0xCD50953B" left="29" top="79" right="43" bottom="100" bordercolor="0x00000000" setbkgndcolor="0x00AAFFAA" />
+    <ADXDGENTRY gaugetype="2" itemidhash="0xCD534D3B" left="43" top="79" right="57" bottom="100" bordercolor="0x00000000" setbkgndcolor="0x00AAFFAA" />
+    <ADXDGENTRY gaugetype="2" itemidhash="0xCD53437B" left="57" top="79" right="71" bottom="100" bordercolor="0x00000000" setbkgndcolor="0x00AAFFAA" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xDE6A1210" left="71" top="79" right="85" bottom="100" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xCD520E5B" left="85" top="79" right="100" bottom="100" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+  </ADXDASHBOARD>
+
+  <ADXDASHBOARD id="APPTDASH" idhash="0x302FD287" title="Adaptive Pressure Modifier">
+    <bkgrndcolor>0x00808080</bkgrndcolor>
+    <entrycount>16</entrycount>
+    <ADXDGENTRY gaugetype="1" itemidhash="0xDE6BBE70" left="0" top="0" right="25" bottom="25" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xDE6BA930" left="25" top="0" right="50" bottom="25" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xDE6A1C50" left="50" top="0" right="75" bottom="25" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xEFA70747" left="75" top="0" right="100" bottom="25" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x28B28FE8" left="0" top="25" right="25" bottom="50" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x28B29548" left="25" top="25" right="50" bottom="50" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x28B28A48" left="50" top="25" right="75" bottom="50" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x28B28848" left="75" top="25" right="100" bottom="50" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x28CE8FE8" left="0" top="50" right="25" bottom="75" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x28CE9548" left="25" top="50" right="50" bottom="75" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x28CE8A48" left="50" top="50" right="75" bottom="75" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x28CE8848" left="75" top="50" right="100" bottom="75" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x28C68FE8" left="0" top="75" right="25" bottom="100" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x28C69548" left="25" top="75" right="50" bottom="100" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x28C68A48" left="50" top="75" right="75" bottom="100" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x28C68848" left="75" top="75" right="100" bottom="100" bordercolor="0x00000000" curvaltxtcolor="0x00000000" alarmlowcolor="0x0000FFFF" />
+  </ADXDASHBOARD>
+
+  <ADXCSENDCOMMAND id="COMMAND0" idhash="0xC579AD33" title="Mode 1, Message 0 Send">
+    <bytestring size="0x5">F5570100B3</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXCLISTENPACKET id="COMMAND0RE" idhash="0xE6B79C55" title="Mode 1, Message 0 Reply" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>84</packetbodylength>
+    <packetoffsetinbody>3</packetoffsetinbody>
+    <packetsize>80</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXMACRO id="COMMAND0MAC" idhash="0xD685487C" title="Mode 1, Message 0 Macro" repeatcount="1">
+    <NODE commandID="COMMAND0" repeatcount="1" />
+    <NODE commandID="COMMAND0RE" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCSENDCOMMAND id="COMMAND1" idhash="0xC579A373" title="Clear Trouble Codes Send">
+    <bytestring size="0x4">F5560AAB</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXCLISTENPACKET id="COMMAND1RE" idhash="0xE68E9C55" title="Clear Trouble Codes Reply" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>3</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>3</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXMACRO id="COMMAND1MAC" idhash="0xD1A5487C" title="Clear Trouble Codes Macro" repeatcount="1">
+    <NODE commandID="COMMAND1" repeatcount="1" />
+    <NODE commandID="COMMAND1RE" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXVALUE id="55" idhash="0xDE6896D0" title="Throttle Position">
+    <flags>0x00000004</flags>
+    <units>%</units>
+    <packetoffset>0x12</packetoffset>
+    <range low="0.000000" high="100.000000" />
+    <alarms low="0.000000" high="80.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.392157 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="56" idhash="0xDE689570" title="Barometric Pressure">
+    <units>Kpa</units>
+    <packetoffset>0x13</packetoffset>
+    <range low="10.350000" high="104.449997" />
+    <alarms low="10.350000" high="104.449997" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.369000 + 10.354000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="57" idhash="0xDE688F30" title="Tachometer">
+    <flags>0x00000004</flags>
+    <units>RPM</units>
+    <packetoffset>0x14</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="6500.000000" />
+    <alarms low="500.000000" high="5850.000000" />
+    <digcount>0</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.125000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="58" idhash="0xDE688270" title="Transmission Input Speed">
+    <flags>0x00000004</flags>
+    <units>RPM</units>
+    <packetoffset>0x16</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="6500.000000" />
+    <alarms low="0.000000" high="5850.000000" />
+    <digcount>0</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.125000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="59" idhash="0xDE689530" title="Filtered Turbine Speed">
+    <units>RPM</units>
+    <packetoffset>0x18</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="31.879999" />
+    <alarms low="0.000000" high="31.879999" />
+    <digcount>0</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.125000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="60" idhash="0xDE68FC50" title="Vechicle Speed">
+    <flags>0x00000004</flags>
+    <units>MPH</units>
+    <packetoffset>0x1A</packetoffset>
+    <range low="0.000000" high="200.000000" />
+    <alarms low="0.000000" high="160.000000" />
+    <digcount>0</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.500000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="61" idhash="0xDE68F210" title="Current Torque Signal Pressure">
+    <units>PSI</units>
+    <packetoffset>0x1B</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="62" idhash="0xDE68E8B0" title="Reference Current Force Motor Circuit">
+    <units>Amps</units>
+    <packetoffset>0x1C</packetoffset>
+    <range low="0.000000" high="4.980000" />
+    <alarms low="0.000000" high="4.980000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.019531 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="63" idhash="0xDE68F7B0" title="Actual Current Sampled from A/D">
+    <units>Amps</units>
+    <packetoffset>0x1D</packetoffset>
+    <range low="0.000000" high="4.980000" />
+    <alarms low="0.000000" high="4.980000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.019531 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="64" idhash="0xDE68F5B0" title="Force Motor Duty Cycle">
+    <units>%</units>
+    <packetoffset>0x1E</packetoffset>
+    <range low="0.000000" high="99.610001" />
+    <alarms low="0.000000" high="99.610001" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.390625 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="65" idhash="0xDE68E2D0" title="Battery Voltage">
+    <flags>0x0000000C</flags>
+    <units>Volts</units>
+    <packetoffset>0x20</packetoffset>
+    <range low="0.000000" high="25.000000" />
+    <alarms low="12.000000" high="15.500000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.100000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="76" idhash="0xDE6BA970" title="TCC PWM Solenoid Duty Cycle">
+    <units>%</units>
+    <packetoffset>0x21</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="0.390000" />
+    <alarms low="0.000000" high="0.390000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.001526 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="77" idhash="0xDE6BB330" title="Transmission Input/Output Speed Ratio">
+    <units>Ratio</units>
+    <packetoffset>0x23</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="0.020000" />
+    <alarms low="0.000000" high="0.020000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.000061 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="78" idhash="0xDE6BBE70" title="Current Gear of Transmission">
+    <units>Gear</units>
+    <packetoffset>0x25</packetoffset>
+    <range low="1.000000" high="256.000000" />
+    <alarms low="1.000000" high="256.000000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X * 1.000000 + 1.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="SHFTDLY" idhash="0x41837EFA" title="Shift Delay Timer">
+    <units>Sec.</units>
+    <packetoffset>0x26</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.025000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="79" idhash="0xDE6BA930" title="Current Adaptive Modifier Cell">
+    <units>Cell</units>
+    <packetoffset>0x28</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="80" idhash="0xDE6A1C50" title="Last Change to Adaptive Modifier">
+    <units>PSI</units>
+    <packetoffset>0x27</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.250000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="81" idhash="0xDE6A1210" title="Desired and Actual Shift Time Error 1-&gt;2 Upshift">
+    <units>Sec.</units>
+    <packetoffset>0x29</packetoffset>
+    <range low="0.000000" high="6.380000" />
+    <alarms low="0.000000" high="6.380000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.025000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="107" idhash="0xCD520E5B" title="Desired and Actual Shift Time Error 2-&gt;3 Upshift">
+    <units>Sec.</units>
+    <packetoffset>0x2A</packetoffset>
+    <range low="0.000000" high="6.380000" />
+    <alarms low="0.000000" high="6.380000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.025000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="ERROR34" idhash="0x8854435B" title="Desired and Actual Shift Time Error 3-&gt;4 Upshift">
+    <units>Sec.</units>
+    <packetoffset>0x2B</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.025000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="ADAPTBLE" idhash="0xEFA70747" title="Last Shift Was Usable for Adapting">
+    <desc>0 = Unusable&#013;&#010;255 = Usable</desc>
+    <units>0 = Unusable   255 = Usable</units>
+    <packetoffset>0x2C</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>0</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="RELDLY" idhash="0xC5E24FE6" title="Release Delay Mode Time">
+    <desc>Time in release delay mode before much slip.</desc>
+    <units>Sec.</units>
+    <packetoffset>0x2D</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.025000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="APPTIME" idhash="0x399EB644" title="TCC Apply Time">
+    <desc>Time torque converter clutch takes to apply.</desc>
+    <units>Sec.</units>
+    <packetoffset>0x2E</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.025000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="108" idhash="0xCD52031B" title="Absolute Value of Slip">
+    <units>RPM</units>
+    <packetoffset>0x2F</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="31.879999" />
+    <alarms low="0.000000" high="31.879999" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.125000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="109" idhash="0xCD52145B" title="Time of Latest 1-&gt;2 Upshift">
+    <units>Sec.</units>
+    <packetoffset>0x31</packetoffset>
+    <range low="0.000000" high="6.380000" />
+    <alarms low="0.000000" high="6.380000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.025000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="110" idhash="0xCD53C13B" title="Time of Latest 2-&gt;3 Upshift">
+    <units>Sec.</units>
+    <packetoffset>0x32</packetoffset>
+    <range low="0.000000" high="6.380000" />
+    <alarms low="0.000000" high="6.380000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.025000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="111" idhash="0xCD53CF7B" title="PROM ID">
+    <units>ID</units>
+    <packetoffset>0x44</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="162" idhash="0xCD51B9DB" title="3-&gt;2 PWM Solenoid Duty Cycle">
+    <units>%</units>
+    <packetoffset>0x46</packetoffset>
+    <range low="0.000000" high="99.610001" />
+    <alarms low="0.000000" high="99.610001" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.390625 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="163" idhash="0xCD51A6DB" title="Filtered MPH Varible">
+    <units>MPH</units>
+    <packetoffset>0x4A</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="184" idhash="0xCD5344DB" title="Raw Output Speed">
+    <units>RPM</units>
+    <packetoffset>0x4B</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="31.879999" />
+    <alarms low="0.000000" high="31.879999" />
+    <digcount>0</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.125000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="185" idhash="0xCD5353BB" title="Current Non Defaulted Value of TPS">
+    <units>Units</units>
+    <packetoffset>0x4D</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="186" idhash="0xCD53501B" title="Coolant Temperature">
+    <flags>0x00000004</flags>
+    <units>Degrees (C)</units>
+    <packetoffset>0x4E</packetoffset>
+    <range low="-40.000000" high="100.000000" />
+    <alarms low="-40.000000" high="95.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.750000 + -40.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="187" idhash="0xCD534A5B" title="Engine Temperature">
+    <flags>0x00000004</flags>
+    <units>Degrees (F)</units>
+    <packetoffset>0x4E</packetoffset>
+    <range low="-40.000000" high="250.000000" />
+    <alarms low="-40.000000" high="220.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 1.350000 + -40.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="188" idhash="0xCD53471B" title="Transmission Fluid Temperature">
+    <units>Degrees (C)</units>
+    <packetoffset>0x4F</packetoffset>
+    <range low="-40.000000" high="100.000000" />
+    <alarms low="-40.000000" high="95.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.750000 + -40.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="189" idhash="0xCD53505B" title="Transmission Temperature">
+    <units>Degrees (F)</units>
+    <packetoffset>0x4F</packetoffset>
+    <range low="-40.000000" high="250.000000" />
+    <alarms low="-40.000000" high="220.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 1.350000 + -40.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="APM201" idhash="0x28B28FE8" title="Adaptive Pressure Modifier - 2nd Gear">
+    <units>PSI</units>
+    <packetoffset>0x34</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.250000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="APM202" idhash="0x28B29548" title="Adaptive Pressure Modifier - 2nd Gear">
+    <units>PSI</units>
+    <packetoffset>0x35</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.250000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="APM203" idhash="0x28B28A48" title="Adaptive Pressure Modifier - 2nd Gear">
+    <units>PSI</units>
+    <packetoffset>0x36</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.250000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="APM204" idhash="0x28B28848" title="Adaptive Pressure Modifier - 2nd Gear">
+    <units>PSI</units>
+    <packetoffset>0x37</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.250000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="APM301" idhash="0x28CE8FE8" title="Adaptive Pressure Modifier - 3rd Gear">
+    <units>PSI</units>
+    <packetoffset>0x38</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.250000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="APM302" idhash="0x28CE9548" title="Adaptive Pressure Modifier - 3rd Gear">
+    <units>PSI</units>
+    <packetoffset>0x39</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.250000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="APM303" idhash="0x28CE8A48" title="Adaptive Pressure Modifier - 3rd Gear">
+    <units>PSI</units>
+    <packetoffset>0x3A</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.250000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="APM304" idhash="0x28CE8848" title="Adaptive Pressure Modifier - 3rd Gear">
+    <units>PSI</units>
+    <packetoffset>0x3B</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.250000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="APM401" idhash="0x28C68FE8" title="Adaptive Pressure Modifier - 4th Gear">
+    <units>PSI</units>
+    <packetoffset>0x3C</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.250000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="APM402" idhash="0x28C69548" title="Adaptive Pressure Modifier - 4th Gear">
+    <units>PSI</units>
+    <packetoffset>0x3D</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.250000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="APM403" idhash="0x28C68A48" title="Adaptive Pressure Modifier - 4th Gear">
+    <units>PSI</units>
+    <packetoffset>0x3E</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.250000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="APM404" idhash="0x28C68848" title="Adaptive Pressure Modifier - 4th Gear">
+    <units>PSI</units>
+    <packetoffset>0x3F</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X * 0.250000 + 0.000000">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXBITMASK id="2" idhash="0x86F34E3B" title="Code 13 O2 Sensor Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x00</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="3" idhash="0x86F3513B" title="Code 14 Coolant Sensor High Temp">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x00</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="4" idhash="0x86F3533B" title="Code 15 Coolant Sensor Low Temp">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x00</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="5" idhash="0x86F3445B" title="Code 16 Vehical Speed Sensor Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x00</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="6" idhash="0x86F347FB" title="Code 21 TPS Sensor High">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x00</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="190" idhash="0xCD51A53B" title="Code 13 O2 Sensor Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x01</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="191" idhash="0xCD51AB7B" title="Code 14 Coolant Sensor High Temp">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x01</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="192" idhash="0xCD51B1DB" title="Code 15 Coolant Sensor Low Temp">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x01</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="193" idhash="0xCD51AEDB" title="Code 16 Vehical Speed Sensor Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x01</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="194" idhash="0xCD51ACDB" title="Code 21 TPS Sensor High">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x01</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="7" idhash="0x86F35DBB" title="Code 22 TPS Sensor Low">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x02</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="8" idhash="0x86F350FB" title="Code 23 MAT Sensor Low">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x02</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="9" idhash="0x86F347BB" title="Code 24 Transmission Output Speed Low">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x02</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="10" idhash="0xDE6A9050" title="Code 25 MAT Sensor High">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x02</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="11" idhash="0xDE6A9E10" title="Code 28 Transmission Pressure Manifold">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x02</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="195" idhash="0xCD51BBBB" title="Code 22 TPS Sensor Low">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x03</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="196" idhash="0xCD51B81B" title="Code 23 MAT Sensor Low">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x03</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="197" idhash="0xCD51A25B" title="Code 24 Transmission Output Speed Low">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x03</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="198" idhash="0xCD51AF1B" title="Code 25 MAT Sensor High">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x03</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="199" idhash="0xCD51B85B" title="Code 28 Transmission Pressure Manifold">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x03</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="12" idhash="0xDE6A84B0" title="Code 31 Governor Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x04</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="13" idhash="0xDE6A9BB0" title="Code 32 EGR Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x04</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="14" idhash="0xDE6A99B0" title="Code 33 MAP Sensor High">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x04</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="15" idhash="0xDE6A8ED0" title="Code 34 MAP Sensor Low">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x04</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="16" idhash="0xDE6A8D70" title="Code 35 IAC Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x04</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="136" idhash="0xCD53681B" title="Code 36 Throttle Kicker Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x04</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="17" idhash="0xDE6A9730" title="Code 37 TCC Brake Switch Stuck On">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x04</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="18" idhash="0xDE6A9A70" title="Code 38 TCC Brake Switch Stuck Off">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x04</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="200" idhash="0xCD38893B" title="Code 31 Governor Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x05</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="201" idhash="0xCD38877B" title="Code 32 EGR Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x05</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="202" idhash="0xCD389DDB" title="Code 33 MAP Sensor High">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x05</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="203" idhash="0xCD3882DB" title="Code 34 MAP Sensor Low">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x05</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="204" idhash="0xCD3880DB" title="Code 35 IAC Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x05</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="205" idhash="0xCD3897BB" title="Code 36 Throttle Kicker Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x05</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="206" idhash="0xCD38941B" title="Code 37 TCC Brake Switch Stuck On">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x05</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="207" idhash="0xCD388E5B" title="Code 38 TCC Brake Switch Stuck Off">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x05</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="19" idhash="0xDE6A8D30" title="Code 39 TCC Stuck Off">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x06</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="20" idhash="0xDE69C450" title="Code 41 Cam Pulse Sensor Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x06</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="21" idhash="0xDE69CA10" title="Code 42 Ignition Error">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x06</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="22" idhash="0xDE69D0B0" title="Code 43 Knock Sensor Circuit Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x06</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="23" idhash="0xDE69CFB0" title="Code 44 O2 Sensor Lean">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x06</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="24" idhash="0xDE69CDB0" title="Code 45 O2 Sensor Rich">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x06</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="25" idhash="0xDE69DAD0" title="Code 46 VATS Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x06</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="208" idhash="0xCD38831B" title="Code 39 TCC Stuck Off">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x07</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="209" idhash="0xCD38945B" title="Code 41 Cam Pulse Sensor Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x07</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="210" idhash="0xCD39413B" title="Code 42 Ignition Error">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x07</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="211" idhash="0xCD394F7B" title="Code 43 Knock Sensor Circuit Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x07</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="212" idhash="0xCD3955DB" title="Code 44 O2 Sensor Lean">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x07</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="213" idhash="0xCD394ADB" title="Code 45 O2 Sensor Rich">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x07</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="214" idhash="0xCD3948DB" title="Code 46 VATS Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x07</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="26" idhash="0xDE69D970" title="Code 51 EPROM Checksum Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x08</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="27" idhash="0xDE69C330" title="Code 52 System Voltage High (Long Test)">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x08</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="28" idhash="0xDE69CE70" title="Code 53 System Voltage High">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x08</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="29" idhash="0xDE69D930" title="Code 54 Fuel Pump Relay Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x08</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="30" idhash="0xDE6A2450" title="Code 55 PCM Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x08</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="215" idhash="0xCD395FBB" title="Code 51 EPROM Checksum Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x09</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="216" idhash="0xCD395C1B" title="Code 52 System Voltage High (Long Test)">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x09</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="217" idhash="0xCD39465B" title="Code 53 System Voltage High">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x09</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="218" idhash="0xCD394B1B" title="Code 54 Fuel Pump Relay Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x09</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="219" idhash="0xCD395C5B" title="Code 55 PCM Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x09</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="31" idhash="0xDE6A2A10" title="Code 58 Transmission Temperature High">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0A</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="32" idhash="0xDE6A30B0" title="Code 59 Transmission Temperature Low">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0A</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="35" idhash="0xDE6A3AD0" title="Code 63 Barometric Pressure Sensor High">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0A</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="36" idhash="0xDE6A3970" title="Code 64 Barometric Pressure Sensor Low">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0A</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="220" idhash="0xCD3A153B" title="Code 58 Transmission Temperature High">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0B</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="221" idhash="0xCD3A1B7B" title="Code 59 Transmission Temperature Low">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0B</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="222" idhash="0xCD3A01DB" title="Code 63 Barometric Pressure Sensor High">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0B</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="223" idhash="0xCD3A1EDB" title="Code 64 Barometric Pressure Sensor Low">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0B</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="37" idhash="0xDE6A2330" title="Code 66 3 -&gt; 2 Shift Solenoid Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0C</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="38" idhash="0xDE6A2E70" title="Code 67 TCC Solenoid Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0C</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="39" idhash="0xDE6A3930" title="Code 68 Transmission Slipping">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0C</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="40" idhash="0xDE6A6450" title="Code 69 TCC Stuck On">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0C</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="41" idhash="0xDE6A6A10" title="Code 71 Transmission Input Speed Low">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0C</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="42" idhash="0xDE6A70B0" title="Code 72 Transmission Output Speed Loss">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0C</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="43" idhash="0xDE6A6FB0" title="Code 73 Pressure Control Solenoid">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0C</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="44" idhash="0xDE6A6DB0" title="Code 74 Transmission Input Speed Sensor">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0C</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="224" idhash="0xCD3A1CDB" title="Code 66 3 -&gt; 2 Shift Solenoid Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0D</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="225" idhash="0xCD3A0BBB" title="Code 67 TCC Solenoid Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0D</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="226" idhash="0xCD3A081B" title="Code 68 Transmission Slipping">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0D</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="227" idhash="0xCD3A125B" title="Code 69 TCC Stuck On">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0D</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="228" idhash="0xCD3A1F1B" title="Code 71 Transmission Input Speed Low">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0D</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="229" idhash="0xCD3A085B" title="Code 72 Transmission Output Speed Loss">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0D</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="230" idhash="0xCD39F53B" title="Code 73 Pressure Control Solenoid">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0D</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="231" idhash="0xCD39FB7B" title="Code 74 Transmission Input Speed Sensor">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0D</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="45" idhash="0xDE6A7AD0" title="Code 75 System Voltage Low">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0E</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="46" idhash="0xDE6A7970" title="Code 77 MNP Switch">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0E</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="47" idhash="0xDE6A6330" title="Code 79 Transmission Overheat">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0E</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="48" idhash="0xDE6A6E70" title="Code 81 2 -&gt; 3 Shift Solenoid Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0E</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="49" idhash="0xDE6A7930" title="Code 82 1 -&gt; 2 Shift Solenoid Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0E</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="50" idhash="0xDE688850" title="Code 83 TCC PWM Solenoid Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0E</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="232" idhash="0xCD39E1DB" title="Code 75 System Voltage Low">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0F</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="233" idhash="0xCD39FEDB" title="Code 77 MNP Switch">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0F</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="234" idhash="0xCD39FCDB" title="Code 79 Transmission Overheat">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0F</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="235" idhash="0xCD39EBBB" title="Code 81 2 -&gt; 3 Shift Solenoid Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0F</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="236" idhash="0xCD39E81B" title="Code 82 1 -&gt; 2 Shift Solenoid Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0F</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="237" idhash="0xCD39F25B" title="Code 83 TCC PWM Solenoid Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x0F</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="51" idhash="0xDE688610" title="Code 85 Undefined Shift Solenoid Failure">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x10</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="52" idhash="0xDE689CB0" title="Code 86 2 -&gt; 3 Shift Solenoid Stuck On">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x10</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="53" idhash="0xDE6883B0" title="Code 87 2 -&gt; 3 Shift Solenoid Stuck Off">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x10</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="54" idhash="0xDE6881B0" title="Code 89 Maximum Adaptive Long Shift">
+    <flags>0x00000004</flags>
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x10</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="238" idhash="0xCD39FF1B" title="Code 85 Undefined Shift Solenoid Failure">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x11</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="239" idhash="0xCD39E85B" title="Code 86 2 -&gt; 3 Shift Solenoid Stuck On">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x11</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="240" idhash="0xCD39B53B" title="Code 87 2 -&gt; 3 Shift Solenoid Stuck Off">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x11</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="241" idhash="0xCD39BB7B" title="Code 89 Maximum Adaptive Long Shift">
+    <truestring>Error</truestring>
+    <falsestring>OK</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x11</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="68" idhash="0xDE68F670" title="Low Gear">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x1F</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="69" idhash="0xDE68E130" title="Drive 2">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x1F</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="70" idhash="0xDE6BB450" title="Drive 3">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x1F</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="71" idhash="0xDE6BBA10" title="Drive 4">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x1F</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="72" idhash="0xDE6BA0B0" title="Reverse">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x1F</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="73" idhash="0xDE6BBFB0" title="Park/Neutral">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x1F</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="74" idhash="0xDE6BBDB0" title="Illegal Range">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x1F</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="113" idhash="0xCD53CADB" title="Cold Temperature Threshold">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x33</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="114" idhash="0xCD53C8DB" title="Hot Temperature Threshold">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x33</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="117" idhash="0xCD53C65B" title="Brake On">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x40</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="118" idhash="0xCD53CB1B" title="AC Compressor Engaged">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x40</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="119" idhash="0xCD53DC5B" title="Power Enrichment Active">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x40</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="120" idhash="0xCD50953B" title="Kickdown Pattern Active">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x40</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="121" idhash="0xCD509B7B" title="Four Wheel Drive Active">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x40</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="122" idhash="0xCD5081DB" title="Cruise Control Active">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x40</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="123" idhash="0xCD509EDB" title="Diagnostics Requested">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x40</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="126" idhash="0xCD50881B" title="Shift A Feedback">
+    <flags>0x00000008</flags>
+    <truestring>Off</truestring>
+    <falsestring>On</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x41</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="127" idhash="0xCD50925B" title="Shift B Feedback">
+    <flags>0x00000008</flags>
+    <truestring>Off</truestring>
+    <falsestring>On</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x41</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="128" idhash="0xCD509F1B" title="TCC Enable Feedback">
+    <flags>0x00000008</flags>
+    <truestring>Off</truestring>
+    <falsestring>On</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x41</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="129" idhash="0xCD50885B" title="3-&gt;2 Downshift Feedback">
+    <flags>0x00000008</flags>
+    <truestring>Off</truestring>
+    <falsestring>On</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x41</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="130" idhash="0xCD53753B" title="BYP Control (From Reset)">
+    <flags>0x00000004</flags>
+    <truestring>Set</truestring>
+    <falsestring>Not Set</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x41</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="131" idhash="0xCD537B7B" title="BYP Montior (From Reset)">
+    <flags>0x00000004</flags>
+    <truestring>Set</truestring>
+    <falsestring>Not Set</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x41</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="132" idhash="0xCD5361DB" title="BYPI (From Reset)">
+    <flags>0x00000004</flags>
+    <truestring>Set</truestring>
+    <falsestring>Not Set</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x41</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="133" idhash="0xCD537EDB" title="TCC Enable">
+    <flags>0x00000004</flags>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x41</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="137" idhash="0xCD53725B" title="Shift A Solenoid">
+    <desc>L   D2   D3   D4&#013;&#010;1    0     0     1   Shift A&#013;&#010;1    1     0     0   Shift B</desc>
+    <truestring>1</truestring>
+    <falsestring>0</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x42</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="138" idhash="0xCD537F1B" title="Shift B Solenoid">
+    <desc>L   D2   D3   D4&#013;&#010;1    0     0     1   Shift A&#013;&#010;1    1     0     0   Shift B</desc>
+    <truestring>1</truestring>
+    <falsestring>0</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x42</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="139" idhash="0xCD53685B" title="IAC Coil A">
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x42</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="140" idhash="0xCD53353B" title="IAC Coil B">
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x42</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="141" idhash="0xCD533B7B" title="IAC Enable">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x42</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="142" idhash="0xCD5321DB" title="Force Motor Enable">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x42</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="143" idhash="0xCD533EDB" title="Reference IRQ Clear">
+    <flags>0x00000004</flags>
+    <truestring>Set</truestring>
+    <falsestring>Not Set</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x42</packetoffset>
+    <operand>0x00000040</operand>
+    <bitop>AND</bitop>
+    <result>0x00000040</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="144" idhash="0xCD533CDB" title="Memory Clear">
+    <flags>0x00000004</flags>
+    <truestring>Set</truestring>
+    <falsestring>Not Set</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x42</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="147" idhash="0xCD53325B" title="A/C Request">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x43</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="148" idhash="0xCD533F1B" title="Brake Switch">
+    <flags>0x00000008</flags>
+    <truestring>Off</truestring>
+    <falsestring>On</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x43</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="160" idhash="0xCD51AD3B" title="Four Wheel Drive Low">
+    <flags>0x00000008</flags>
+    <truestring>Off</truestring>
+    <falsestring>On</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x43</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="156" idhash="0xCD51C41B" title="Range 1">
+    <desc>L  D2  D3  D4  P/N  R&#013;&#010;0    1    1    1    1    0  Range 1&#013;&#010;1    1    1    0    0    0  Range 2&#013;&#010;1    1    0    0    1    1  Range 3</desc>
+    <truestring>1</truestring>
+    <falsestring>0</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x43</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="157" idhash="0xCD51DE5B" title="Range 2">
+    <desc>L  D2  D3  D4  P/N  R&#013;&#010;0    1    1    1    1    0  Range 1&#013;&#010;1    1    1    0    0    0  Range 2&#013;&#010;1    1    0    0    1    1  Range 3</desc>
+    <truestring>1</truestring>
+    <falsestring>0</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x43</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="158" idhash="0xCD51D31B" title="Range 3">
+    <desc>L  D2  D3  D4  P/N  R&#013;&#010;0    1    1    1    1    0  Range 1&#013;&#010;1    1    1    0    0    0  Range 2&#013;&#010;1    1    0    0    1    1  Range 3</desc>
+    <truestring>1</truestring>
+    <falsestring>0</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x43</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="164" idhash="0xCD51A4DB" title="Quad Driver Module 1 Fault Detected">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x47</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="165" idhash="0xCD51B3BB" title="Quad Driver Module 2 Fault Detected">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x47</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="166" idhash="0xCD51B01B" title="Injector 1 Fault Detected">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x47</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="167" idhash="0xCD51AA5B" title="Injector 2 Fault Detected">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x47</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="168" idhash="0xCD51A71B" title="Shift Solenoid A Valid">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x47</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="169" idhash="0xCD51B05B" title="Shift Solenoid B Valid">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x47</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="172" idhash="0xCD52F1DB" title="Slope of Derivative is Negative">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x48</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="173" idhash="0xCD52EEDB" title="Derivative Shift Started">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x48</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="174" idhash="0xCD52ECDB" title="Shift has Started">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x48</packetoffset>
+    <operand>0x00000010</operand>
+    <bitop>AND</bitop>
+    <result>0x00000010</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="175" idhash="0xCD52FBBB" title="2-&gt;4 Jump Shift when PRNDL in D3">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x48</packetoffset>
+    <operand>0x00000020</operand>
+    <bitop>AND</bitop>
+    <result>0x00000020</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="176" idhash="0xCD52F81B" title="Shift is Complete">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x48</packetoffset>
+    <operand>0x00000080</operand>
+    <bitop>AND</bitop>
+    <result>0x00000080</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="179" idhash="0xCD52F85B" title="Normal Pattern Requested">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x49</packetoffset>
+    <operand>0x00000001</operand>
+    <bitop>AND</bitop>
+    <result>0x00000001</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="180" idhash="0xCD534D3B" title="Performance Pattern Requested">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x49</packetoffset>
+    <operand>0x00000002</operand>
+    <bitop>AND</bitop>
+    <result>0x00000002</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="181" idhash="0xCD53437B" title="Manual Pattern Requested">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x49</packetoffset>
+    <operand>0x00000004</operand>
+    <bitop>AND</bitop>
+    <result>0x00000004</result>
+  </ADXBITMASK>
+
+  <ADXBITMASK id="182" idhash="0xCD5359DB" title="Illegal Pattern Requested">
+    <flags>0x00000004</flags>
+    <truestring>Yes</truestring>
+    <falsestring>No</falsestring>
+    <ALARMONSET color="0x000000FF" />
+    <ALARMONNOTSET color="0x0000FF00" />
+    <packetoffset>0x49</packetoffset>
+    <operand>0x00000008</operand>
+    <bitop>AND</bitop>
+    <result>0x00000008</result>
+  </ADXBITMASK>
+
+  <ADXLISTVIEW id="DEFAULTVIEW" idhash="0x38ADC566" title="Sensor Data">
+    <entrycount>43</entrycount>
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=General=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53CF7B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE68FC50" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51A6DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE68E2D0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE689570" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=Engine=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE688F30" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD534A5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53501B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6896D0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD5353BB" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=Transmission=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53505B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53471B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6BBE70" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE689530" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE688270" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD5344DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6BB330" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xC5E24FE6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x399EB644" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6BA970" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51B9DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE68F5B0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE68F210" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE68E8B0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE68F7B0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x41837EFA" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6BA930" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A1C50" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A1210" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD520E5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x8854435B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD52031B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD52145B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53C13B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xEFA70747" />
+    <ADXLVENTRY entrytype="1" title="0 = Unusable 255 = Usable" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+  </ADXLISTVIEW>
+
+  <ADXLISTVIEW id="ADAPVIEW" idhash="0xED3B5467" title="Adaptive Pressure Modifier">
+    <entrycount>21</entrycount>
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=Adaptive Pressure Modifier=-" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="2nd Gear" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x28B28FE8" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x28B29548" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x28B28A48" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x28B28848" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="3rd Gear" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x28CE8FE8" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x28CE9548" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x28CE8A48" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x28CE8848" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="4th Gear" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x28C68FE8" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x28C69548" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x28C68A48" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x28C68848" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+  </ADXLISTVIEW>
+
+  <ADXLISTVIEW id="BITMASKS" idhash="0xC524EDA4" title="Bitmasks">
+    <entrycount>79</entrycount>
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=Current Gear=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE68F670" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE68E130" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6BB450" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6BBA10" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6BA0B0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6BBFB0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6BBDB0" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=Temperature Status Word=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53CADB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53C8DB" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=Bit Status Word=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53C65B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53CB1B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53DC5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD50953B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD509B7B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD5081DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD509EDB" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=I/O Port A=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD50881B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD50925B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD509F1B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD50885B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53753B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD537B7B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD5361DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD537EDB" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=I/O Port B=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53685B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53353B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD533B7B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD5321DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD533EDB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD533CDB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53725B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD537F1B" />
+    <ADXLVENTRY entrytype="1" title="L   D2   D3   D4" />
+    <ADXLVENTRY entrytype="1" title="1    0     0     1   Shift A" />
+    <ADXLVENTRY entrytype="1" title="1    1     0     0   Shift B" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=I/O Port C=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53325B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD533F1B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51AD3B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51C41B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51DE5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51D31B" />
+    <ADXLVENTRY entrytype="1" title="L  D2  D3  D4  P/N  R" />
+    <ADXLVENTRY entrytype="1" title="0    1    1    1    1    0  Range 1" />
+    <ADXLVENTRY entrytype="1" title="1    1    1    0    0    0  Range 2" />
+    <ADXLVENTRY entrytype="1" title="1    1    0    0    1    1  Range 3" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=Discrete Fault Flags=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51A4DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51B3BB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51B01B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51AA5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51A71B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51B05B" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=Shift Word=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD52F1DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD52EEDB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD52ECDB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD52FBBB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD52F81B" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=MNP Pattern=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD52F85B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD534D3B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53437B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD5359DB" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+  </ADXLISTVIEW>
+
+  <ADXLISTVIEW id="0" idhash="0x86F35ADB" title="Malfunction Codes">
+    <entrycount>55</entrycount>
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=Malfunction Codes=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x86F34E3B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x86F3513B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x86F3533B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x86F3445B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x86F347FB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x86F35DBB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x86F350FB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x86F347BB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A9050" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A9E10" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A84B0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A9BB0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A99B0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A8ED0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A8D70" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD53681B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A9730" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A9A70" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A8D30" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE69C450" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE69CA10" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE69D0B0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE69CFB0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE69CDB0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE69DAD0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE69D970" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE69C330" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE69CE70" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE69D930" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A2450" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A2A10" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A30B0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A3AD0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A3970" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A2330" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A2E70" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A3930" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A6450" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A6A10" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A70B0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A6FB0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A6DB0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A7AD0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A7970" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A6330" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A6E70" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6A7930" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE688850" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE688610" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE689CB0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6883B0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6881B0" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+  </ADXLISTVIEW>
+
+  <ADXLISTVIEW id="242" idhash="0xCD39A1DB" title="Current Malfunction Codes">
+    <entrycount>55</entrycount>
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="-=Current Malfunction Codes=-" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51A53B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51AB7B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51B1DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51AEDB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51ACDB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51BBBB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51B81B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51A25B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51AF1B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD51B85B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD38893B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD38877B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD389DDB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3882DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3880DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3897BB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD38941B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD388E5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD38831B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD38945B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39413B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD394F7B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3955DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD394ADB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3948DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD395FBB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD395C1B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39465B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD394B1B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD395C5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3A153B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3A1B7B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3A01DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3A1EDB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3A1CDB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3A0BBB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3A081B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3A125B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3A1F1B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD3A085B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39F53B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39FB7B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39E1DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39FEDB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39FCDB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39EBBB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39E81B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39F25B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39FF1B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39E85B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39B53B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD39BB7B" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" />
+  </ADXLISTVIEW>
+</ADXFORMAT>

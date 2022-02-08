@@ -1,0 +1,200 @@
+==============  Verbose ==============
+M1 command
+
+from ARDUINO  ôW
+0$F4 0$57 0$01 0$00 0xB4
+
+
+to send  ô•
+0XF4 0X95 0X01 
+
+64b
+1111111111111111111111111111111111111111111111111111111111111111
+
+0000000000000000000000000000p000000000r00000000000000000000
+
+ô•0000000000000000000000000000p000000000r00000000000000000000
+
+
+
+
+
+
+============  Data Bytes =============
+
+float RPM;
+float TPS;
+float Speed;
+float EngTemp;
+float SparkAdv;
+int Integrator;
+float InjBPW;
+float Batt;
+float MAT;
+
+
+float O2mv;
+float FuelPumpV;
+int IACpresentPos;
+unsigned int Runtime;
+
+
+0
+
+byte RPMbyte =  34;
+byte TPSbyte = 42;
+byte SpeedByte = 31;
+byte EngTempByte = 15;
+byte SparkAdvByteMSB = 45;
+byte SparkAdvByteLSB = 46;
+byte IntegratorByte = 49;
+byte InjBPWbyteMSB = 45;
+byte InjBPWbyteLSB = 46;
+byte BatteryByte = 16;
+byte MATbyte = 63;
+
+
+byte O2mvbyte = 19;
+byte FuelPumpVbyte = 33;
+byte IACpresentPosByte = 5;
+byte RuntimeByteMSB = 39;
+byte RuntimeByteLSB = 40;
+
+
+
+
+
+RPM				34 n*25
+TPSprc 			42 n/2.56
+Speed			31 kmph=1.61*n
+EngineTemp 		15 C=.75n-40
+SparkAdvMSB 	45 deg=n*90/256
+SparkAdvLSB		46
+
+Integrator 		49
+InjBPWmsb 		57 msec=n/65.536
+InjBPWlsb		58
+Batt 			16 V=n/10
+MAT 			63 c=.75*n-40
+
+TPSv 			17 v=n*5/256
+MAP 			18 kpa = (N + 28.06)/2.71
+O2mv 			19 mV = 4.42N
+FuelPumpV 		33 V=n/10
+IACpresentPos 	5
+RuntimeMSB		39 sec=n
+RuntimeLSB		40
+
+
+
+
+
+
+
+==========  Display connection  ===========
+
+cs  11
+a0  10
+rst  9
+mosi sda
+sck  sck
+
+
+
+
+
+==========  Modes and Checksum  ===========
+
+
+/*#### Checksum is 2's complement of sum of all bytes in the message ####
+// https://onlinehextools.com/add-hex-numbers
+// https://onlinehextools.com/convert-hex-to-binary
+// https://www.browserling.com/tools/invert-binary
+// https://onlinehextools.com/convert-binary-to-hex
+// https://ncalculators.com/digital-computation/1s-2s-complement-calculator.htm
+
+CHECKSUM
+The last byte is the checksum of the entire frame. The checksum is determined so that 
+the sum of all the bytes in the frame - including the frame ID, the length byte and
+the checksum byte itself - is zero, ignoring any carry bits.
+
+For example the frame $F5,$57,$01,$00,$B3
+
+Has a frame ID of $F7.
+Has a length of $57-$55=$02 data bytes.
+Contains two data bytes: $01,$00.
+Has a checksum of $B3.
+
+To calculate the checksum in hex:
+Sum the bytes $F5+$57+$01+$00=$14D.
+Find the remainder when the sum is divided by $100 which in this case is $4D.
+The checksum will be $100-$4D=$B3.
+
+To calculate the checksum in decimal:
+Sum the bytes 245+87+1+0=333.
+Find the remainder when the sum is divided by 256 which in this case is 77.
+The checksum will be 256-77=179 (179 is $B3 in hexadecimal).
+
+
+
+// For A028 and A059 Definition example
+//  0x80 + 0x56 + 0x01 = 0xD7
+//  1's compliment of 0xD7 is inverted 0xD7 BIN (11010111) to HEX
+//				   = 00101000 = 0x28
+//  2's Complement = 00101001 = 0x29
+
+
+// For A201 Definition
+//	ECM 16168625 and 16179571
+//  PCM-6 WITH 4L60E TRANSMISSION
+//   ENGINE   USAGE:
+//  L03    5.0L    93  VIN = H   C,K,G
+//  L05    5.7L    93  VIN = K   C,K,G
+//  L35    4.3L    93  VIN = W   S,T,M,L
+//  LB4    4.3L    93  VIN = Z   G,M,L,S,T,C,K
+//   DATA PIN  : READ DATA ON PIN "M" OF ALDL CONNECTOR
+
+//	MODE 0 (RETURN TO NORMAL MODE)
+//		ALDL REQUEST:
+//		- MESSAGE ID     = $F4
+//		- MESSAGE LENGTH = $56
+//		- MODE           = $00
+//		- SUM CHECK 1s = 0xB5, 2s = 0xB6 <<<<<<<<<============
+//			THE PCM WILL RESPOND WITH THE FOLLOWING MESSAGE:
+//			- MESSAGE ID     = $F4
+//			- MESSAGE LENGTH = $56
+//			- MODE           = $00
+//			- SUM CHECK
+
+//	MODE 1 (TRANSMIT FIXED DATA STREAM)
+//		ALDL REQUEST:
+//		- MESSAGE ID     = $F4
+//		- MESSAGE LENGTH = $57
+//		- MODE           = $01
+//		- MESSAGE        = $00
+//		- SUM CHECK 1s = 0xB3, 2s = 0xB4 <<<<<<<<<============
+//			THE PCM WILL RESPOND WITH THE FOLLOWING MESSAGE:
+//			- MESSAGE ID     = $F4
+//			- MESSAGE LENGTH = $95
+//			- MODE           = $01
+//			- DATA BYTE 1
+//			  .
+//			  .
+//			- DATA BYTE 63
+//			- SUM CHECK
+
+//	MODE 10 (CLEAR MALFUNCTION CODES)
+//		ALDL REQUEST:
+//		- MESSAGE ID     = $F4
+//		- MESSAGE LENGTH = $56
+//		- MODE           = $0A
+//		- SUM CHECK 1s = 0xAA, 2s = 0xAB <<<<<<<<<============
+//			THE PCM WILL RESPOND WITH THE FOLLOWING MESSAGE:
+//			- MESSAGE ID     = $F4
+//			- MESSAGE LENGTH = $56
+//			- MODE           = $0A
+//			- SUM CHECK 
+
+
+// 8192 бод = 2048 бита в секунду 
+// каждые 0,00048 сек или 480 микросекунд */

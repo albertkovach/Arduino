@@ -1,0 +1,119 @@
+Acronyms and Abbreviations
+
+~T - Inverse Temperature
+~AFR - Inverse Air Fuel Ratio
+#/Hr - Pounds per Hour
+ABS - Anti-lock Braking System
+A/C - Air Conditioning
+ADC - Analog to Digital Converter
+AE - Acceleration Enrichment
+AFPR - Adjustable Fuel Pressure Regulator
+AFR - Air Fuel Ratio
+AIR - Air Injection Reactor
+ATDC - After Top Dead Center
+ALDL - Assembly Line Diagnostic Link
+BARO - Barometric Pressure
+BBC - Big Block Chevy
+BBL - Barrel
+BCM - Body Control Module
+BDC - Bottom Dead Center
+BIN - Binary
+BLM - Block Learn Multiplier (long term fuel trim)
+BSFC - Brake Specific Fuel Consumption
+BPC - Base Pulse Constant
+BPW - Base Pulse Width
+BTDC - Before Top Dead Center
+CAFE - Corporate Average Fuel Economy
+CARB - California Air Resources Board
+C - Celsius
+CAT - Catalytic Converter
+CAT-CON - Catalytic Converter
+CCI - Computer Controlled Ignition
+CCP - Charcoal Cannister Purge
+CDI - Capacitive Discharge Ignition
+CEL - Check Engine Light
+CFI - Cross-Fire Injection
+CLT - Closed Loop Term (fueling correction)
+CNP - Coil Near Plug
+CTS - Coolant Temperature Sensor
+dTPS - Delta Throttle Position Sensor
+dMAP - Delta Manifold Absolute Pressure Sensor
+DC - Duty Cycle
+DE - Deceleration Enleanment (opposite of AE)
+DFCO - Decel Fuel Cut Off
+DIS - Distributorless Ignition System
+DRP - Distributor Reference Pulse
+EBL - EmBedded Lockers system
+ECM - Engine Control Module
+ECT - Engine Coolant Temperature
+EGR - Exhaust Gas Recirculation
+EGT - Exhaust Gas Temperature
+EPROM - Eraseable Programmable Read-only Memory
+ESC - Electronic Spark Control, knock detection & retard
+EST - Electronic Spark Timing, SA control
+F - Fahrenheit
+FAR - Fuel Air Ratio
+FPR - Fuel Pressure Regulator
+Ft/Lb - Foot Pounds (torque)
+GPS - Grams Per Second
+Gms/Sec - Grams per Second
+HEI - High Energy Ignition
+HP - Horse Power
+HYST - Hysteresis
+IAC - Idle Air Control (an actuator)
+IAT - Intake Air Temperature (sensor)
+INT - Integrator (short term fuel trim)
+Km - KiloMeters
+Km/L - Kilometers per Litre
+KPa - KiloPascals
+KPH - Kilometers Per Hour
+LDA - Lobe Displacement Angle (camshaft, same as LSA)
+LM - Launch Mode
+LSA - Lobe Separation Angle (camshaft, same as LDA)
+LV8 - Load Variable, 8-bit
+LV16 - Load Variable, 16-bit
+MAF - Mass Air Flow
+MAP - Manifold Absolute Pressure
+MAT - Manifold Air Temperature (sensor)
+MPG - Miles Per Gallon
+MPH - Miles Per Hour
+MPFI - Multi Port Fuel Injection
+mSec - milli-Seconds (.001 second)
+NB - Narrow Band O2 sensor
+N-Alpha - RPM & Throttle position for load
+N/V - Ratio of  Engine speed (N) to Vehicle Speed (V)
+O2 - Oxygen Sensor value
+P/S - Power Steering
+PA3 - Knock Counts (PA3 is the name of the ECM counter)
+PCM - Powertrain Control Module
+PCV - Positive Crankcase Ventilation
+PE - Power Enrichment (see WOT)
+PPH - Pounds Per Hour
+PROM - Programmable Read-only Memory
+PSI - Pounds per Square Inch
+PW - Pulse Width
+PWM - Pulse Width Modulation
+RPM - Revolutions Per Minute
+SA - Spark Advance
+SBC - Small Block Chevy
+SD - Speed Density
+SES - Service Engine Soon
+TACH - Tachometer
+TBI - Throttle Body Injection
+TCC - Torque Converter Clutch
+TCM - Transmission Control Module
+TDC - Top Dead Center
+TF - Throttle Follower (IAC function)
+TPS - Throttle Position Sensor
+TSA - total spark advance
+uSec - micro-Seconds (.000001 seconds)
+UEGO - Universal Exhaust Gas Oxygen sensor (a WB unit)
+VAC - Vacuum
+VAFPR - Vacuum Adjusted Fuel Pressure Regulator
+VATS - Vehicle Anti-theft System
+VE - Volumetric Efficiency
+VRFPR - Vacuum Referenced Fuel Pressure Regulator
+VSS - Vehicle Speed Sensor
+WB - Wide Band O2 sensor 
+WOT - Wide Open Throttle (see PE)
+WYSIWYG - What You See Is What You Get
