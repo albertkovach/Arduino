@@ -18,7 +18,7 @@ int Btn1State = 0;
 int Btn1OldState = 1;
 
 byte ScreenSelect = 0;
-byte MaxScreens = 2;
+byte MaxScreens = 3;
 
 float RPM = 0;
 float TPS = 0;
@@ -60,6 +60,16 @@ void loop() {
 
 
 void RefreshScreen() {
+	if (ScreenSelect==0) {
+		MainScreen();
+	}
+	if (ScreenSelect==1) {
+		Screen1();
+	}
+	if (ScreenSelect==2) {
+		Screen2();
+	}
+  /* 
 	switch (ScreenSelect) {
 		case 0:
 			MainScreen();
@@ -67,7 +77,7 @@ void RefreshScreen() {
 			Screen1 ();
 		case 2:
 			Screen2 ();
-	}
+	}*/
 }
 
 
@@ -155,7 +165,7 @@ void Screen2() {
 	TFT.setTextColor(Yellow, ST7735_BLACK);
 	TFT.cp437(true);
 
-	TFT.setCursor(0, 0);
+	TFT.setCursor(0, 50);
 
 	TFT.print("Screen 2");
 }
@@ -189,23 +199,37 @@ void Increment() {
 
 
 
+
 void BtnHandler() {
-  Btn1State = digitalRead(Btn1Pin);
-  
-  if (Btn1State != Btn1OldState) {
-    Btn1Event();
+	Btn1State = digitalRead(Btn1Pin);
+
+	if (Btn1State == 0) {
+		Btn1PushEvent();
+		
+		if (Btn1State != Btn1OldState) {
+			Btn1ClickEvent();
+			Btn1OldState = Btn1State;
+		}
+    
+	} else {
+    Btn1OldState = 1;
   }
 
-  Btn1OldState = Btn1State;
 }
 
 
+void Btn1PushEvent() {
 
-void Btn1Event() {
-	if (ScreenSelect+1 > MaxScreens) {
+}
+
+
+void Btn1ClickEvent() {
+  ScreenSelect = ScreenSelect + 1;
+
+	if (ScreenSelect >= MaxScreens) {
 		ScreenSelect = 0;
-	} else {
-		ScreenSelect = ScreenSelect++;
 	}
+
 	TFT.fillScreen(ST77XX_BLACK);
 }
+
