@@ -17,8 +17,19 @@ int Btn1Pin = 2;
 int Btn1State = 0;
 int Btn1OldState = 1;
 
-byte ScreenSelect = 0;
-byte MaxScreens = 3;
+int Btn2Pin = 3;
+int Btn2State = 0;
+int Btn2OldState = 1;
+
+int Btn3Pin = 4;
+int Btn3State = 0;
+int Btn3OldState = 1;
+
+
+
+byte ScreenSelect = 1;
+byte MaxScreens = 4;
+byte MinScreens = 0;
 
 float RPM = 0;
 float TPS = 0;
@@ -40,6 +51,8 @@ int RefreshRate = 5;
 
 void setup() {
   pinMode(Btn1Pin, INPUT_PULLUP);
+  pinMode(Btn2Pin, INPUT_PULLUP);
+  pinMode(Btn3Pin, INPUT_PULLUP);
 
   TFT.initR(INITR_BLACKTAB);
   TFT.fillScreen(ST77XX_BLACK);
@@ -56,17 +69,14 @@ void loop() {
 
 
 
-
-
-
 void RefreshScreen() {
-	if (ScreenSelect==0) {
+	if (ScreenSelect==1) {
 		MainScreen();
 	}
-	if (ScreenSelect==1) {
+	if (ScreenSelect==2) {
 		Screen1();
 	}
-	if (ScreenSelect==2) {
+	if (ScreenSelect==3) {
 		Screen2();
 	}
   /* 
@@ -202,34 +212,76 @@ void Increment() {
 
 void BtnHandler() {
 	Btn1State = digitalRead(Btn1Pin);
+	Btn2State = digitalRead(Btn2Pin);
+	Btn3State = digitalRead(Btn3Pin);
 
 	if (Btn1State == 0) {
 		Btn1PushEvent();
-		
 		if (Btn1State != Btn1OldState) {
 			Btn1ClickEvent();
 			Btn1OldState = Btn1State;
 		}
-    
 	} else {
-    Btn1OldState = 1;
-  }
+		Btn1OldState = 1;
+	}
+	
+	if (Btn2State == 0) {
+		Btn2PushEvent();
+		if (Btn2State != Btn2OldState) {
+			Btn2ClickEvent();
+			Btn2OldState = Btn2State;
+		}
+	} else {
+		Btn2OldState = 1;
+	}
+	
+	if (Btn3State == 0) {
+		Btn3PushEvent();
+		if (Btn3State != Btn3OldState) {
+			Btn3ClickEvent();
+			Btn3OldState = Btn3State;
+      }
+	} else {
+		Btn3OldState = 1;
+	}
 
 }
+
+
 
 
 void Btn1PushEvent() {
+}
+
+void Btn1ClickEvent() {
 
 }
 
 
-void Btn1ClickEvent() {
+
+
+void Btn2PushEvent() {
+}
+
+void Btn2ClickEvent() {
   ScreenSelect = ScreenSelect + 1;
-
 	if (ScreenSelect >= MaxScreens) {
-		ScreenSelect = 0;
+		ScreenSelect = 1;
 	}
+	TFT.fillScreen(ST77XX_BLACK);
+}
 
+
+
+
+void Btn3PushEvent() {
+}
+
+void Btn3ClickEvent() {
+	ScreenSelect = ScreenSelect - 1;
+	if (ScreenSelect <= MinScreens) {
+		ScreenSelect = MaxScreens-1;
+	}
 	TFT.fillScreen(ST77XX_BLACK);
 }
 
