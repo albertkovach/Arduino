@@ -247,13 +247,13 @@ void Btn2ClickEvent() { // up
 	ScreenMainCurr = SelectedScreen / ScreenMainMultDiv;
 	SelectedScreenDecode = SelectedScreen - (ScreenMainCurr * ScreenMainMultDiv);
 	// SelectedScreenDecode x.xx.xx -> xx.xx
+	// 12100 - (1*10000) = 2100
+	// 12115 - (1*10000) = 2115
 	
 		if (SelectedScreenDecode == 0) {
 			// mains
 			
-			if (ScreenMainCurr == ScreenMainCount) {
-				SelectedScreen = ScreenMainMultDiv;
-			} else {
+			if (ScreenMainCurr != ScreenMainCount) {
 				SelectedScreen = SelectedScreen + ScreenMainMultDiv;
 			}
 			
@@ -300,19 +300,19 @@ void Btn3PushEvent() {
 }
 
 void Btn3ClickEvent() {
-	
+
 	// calc curr main num
 	ScreenMainCurr = SelectedScreen / ScreenMainMultDiv;
 	SelectedScreenDecode = SelectedScreen - (ScreenMainCurr * ScreenMainMultDiv);
 	// SelectedScreenDecode x.xx.xx -> xx.xx
+	// 12100 - (1*10000) = 2100
+	// 12115 - (1*10000) = 2115
 	
 		if (SelectedScreenDecode == 0) {
 			// mains
 			
-			if (ScreenMainCurr == ScreenMainCount) {
-				SelectedScreen = ScreenMainMultDiv;
-			} else {
-				SelectedScreen = SelectedScreen + ScreenMainMultDiv;
+			if (ScreenMainCurr != ScreenMainMultDiv) {
+				SelectedScreen = SelectedScreen - ScreenMainMultDiv;
 			}
 			
 		} else {
@@ -346,6 +346,7 @@ void Btn3ClickEvent() {
 				}
 			}
 		}
+
 }
 
 
