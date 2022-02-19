@@ -47,6 +47,22 @@ int RefreshRate = 5;
 
 
 
+int SelectedScreen = 10000;
+
+int ScreenMainCount = 2;
+int ScreenMainMultDiv = 10000;
+int ScreenMainCurr;
+
+int Screen1subCount = 4;
+int Screen1subMultDiv = 100;
+int Screen1subCurr;
+
+int Screen2subCount = 8;
+int Screen2subMultDiv = 1;
+int Screen2subCurr;
+
+int SelectedScreenDecode;
+
 
 
 void setup() {
@@ -70,16 +86,6 @@ void loop() {
 
 
 void RefreshScreen() {
-	if (ScreenSelect==1) {
-		MainScreen();
-	}
-	if (ScreenSelect==2) {
-		Screen1();
-	}
-	if (ScreenSelect==3) {
-		Screen2();
-	}
-  /* 
 	switch (ScreenSelect) {
 		case 0:
 			MainScreen();
@@ -87,8 +93,11 @@ void RefreshScreen() {
 			Screen1 ();
 		case 2:
 			Screen2 ();
-	}*/
+	}
 }
+
+
+
 
 
 
@@ -168,6 +177,7 @@ void Screen1() {
 	TFT.print("Screen 1");
 }
 
+
 void Screen2() {
 	TFT.setRotation(2);
 	TFT.setFont();
@@ -179,6 +189,171 @@ void Screen2() {
 
 	TFT.print("Screen 2");
 }
+
+
+
+
+
+
+
+
+
+
+
+void Btn1PushEvent() {
+	// ok
+}
+
+void Btn1ClickEvent() {
+
+}
+
+/*
+
+10000
+10100
+
+20000
+20100
+
+
+
+215
+
+
+int SelectedScreen = 10000;
+
+byte ScreenMainCount = 2;
+byte ScreenMainMultDiv = 10000;
+byte Screen1subCount = 4;
+byte Screen1subMultDiv = 1000;
+byte Screen2subCount = 8;
+byte Screen2subMultDiv = 100;
+
+
+
+2.01.00 -> 1.00 
+
+
+*/
+
+
+void Btn2PushEvent() {
+}
+
+void Btn2ClickEvent() { // up
+
+	// calc curr main num
+	ScreenMainCurr = SelectedScreen / ScreenMainMultDiv;
+	SelectedScreenDecode = SelectedScreen - (ScreenMainCurr * ScreenMainMultDiv);
+	// SelectedScreenDecode x.xx.xx -> xx.xx
+	
+		if (SelectedScreenDecode == 0) {
+			// mains
+			
+			if (ScreenMainCurr == ScreenMainCount) {
+				SelectedScreen = ScreenMainMultDiv;
+			} else {
+				SelectedScreen = SelectedScreen + ScreenMainMultDiv;
+			}
+			
+		} else {
+			
+			Screen1subCurr = SelectedScreenDecode / Screen1subMultDiv;
+			SelectedScreenDecode = SelectedScreenDecode - (Screen1subCurr * Screen1subMultDiv);
+			// SelectedScreenDecode xx.xx -> xx
+			// 2100 - (21*100) = 00
+			// 2115 - (21*100) = 15
+			
+			if (SelectedScreenDecode == 0) {
+				// 1st sub
+				
+				if (Screen1subCurr == Screen1subCount) {
+					SelectedScreen = SelectedScreen - (Screen1subCurr * Screen1subMultDiv) + Screen1subMultDiv;
+				} else {
+					SelectedScreen = SelectedScreen + Screen1subMultDiv;
+				}
+			
+				SelectedScreen = SelectedScreen + 0;
+				
+			} else {
+				// 2st sub
+				
+				Screen2subCount = SelectedScreenDecode;
+				
+				if (Screen2subCurr == Screen2subCount) {
+					SelectedScreen = SelectedScreen - (Screen2subCurr * Screen2subMultDiv) + Screen2subMultDiv;
+				} else {
+					SelectedScreen = SelectedScreen + Screen2subMultDiv;
+				}
+			}
+		}
+	
+	TFT.fillScreen(ST77XX_BLACK);
+}
+
+
+
+
+void Btn3PushEvent() {
+	// down
+}
+
+void Btn3ClickEvent() {
+	
+	// calc curr main num
+	ScreenMainCurr = SelectedScreen / ScreenMainMultDiv;
+	SelectedScreenDecode = SelectedScreen - (ScreenMainCurr * ScreenMainMultDiv);
+	// SelectedScreenDecode x.xx.xx -> xx.xx
+	
+		if (SelectedScreenDecode == 0) {
+			// mains
+			
+			if (ScreenMainCurr == ScreenMainCount) {
+				SelectedScreen = ScreenMainMultDiv;
+			} else {
+				SelectedScreen = SelectedScreen + ScreenMainMultDiv;
+			}
+			
+		} else {
+			
+			Screen1subCurr = SelectedScreenDecode / Screen1subMultDiv;
+			SelectedScreenDecode = SelectedScreenDecode - (Screen1subCurr * Screen1subMultDiv);
+			// SelectedScreenDecode xx.xx -> xx
+			// 2100 - (21*100) = 00
+			// 2115 - (21*100) = 15
+			
+			if (SelectedScreenDecode == 0) {
+				// 1st sub
+				
+				if (Screen1subCurr == Screen1subCount) {
+					SelectedScreen = SelectedScreen - (Screen1subCurr * Screen1subMultDiv) + Screen1subMultDiv;
+				} else {
+					SelectedScreen = SelectedScreen + Screen1subMultDiv;
+				}
+			
+				SelectedScreen = SelectedScreen + 0;
+				
+			} else {
+				// 2st sub
+				
+				Screen2subCount = SelectedScreenDecode;
+				
+				if (Screen2subCurr == Screen2subCount) {
+					SelectedScreen = SelectedScreen - (Screen2subCurr * Screen2subMultDiv) + Screen2subMultDiv;
+				} else {
+					SelectedScreen = SelectedScreen + Screen2subMultDiv;
+				}
+			}
+		}
+}
+
+
+
+
+
+
+
 
 
 void Increment() {
@@ -204,10 +379,6 @@ void Increment() {
   if (FuelConsmp > 110) FuelConsmp = 0;
 
 }
-
-
-
-
 
 
 void BtnHandler() {
@@ -245,43 +416,5 @@ void BtnHandler() {
 		Btn3OldState = 1;
 	}
 
-}
-
-
-
-
-void Btn1PushEvent() {
-}
-
-void Btn1ClickEvent() {
-
-}
-
-
-
-
-void Btn2PushEvent() {
-}
-
-void Btn2ClickEvent() {
-  ScreenSelect = ScreenSelect + 1;
-	if (ScreenSelect >= MaxScreens) {
-		ScreenSelect = 1;
-	}
-	TFT.fillScreen(ST77XX_BLACK);
-}
-
-
-
-
-void Btn3PushEvent() {
-}
-
-void Btn3ClickEvent() {
-	ScreenSelect = ScreenSelect - 1;
-	if (ScreenSelect <= MinScreens) {
-		ScreenSelect = MaxScreens-1;
-	}
-	TFT.fillScreen(ST77XX_BLACK);
 }
 
