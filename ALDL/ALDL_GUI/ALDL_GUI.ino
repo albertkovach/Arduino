@@ -70,9 +70,32 @@ bool Screen3levelClick = false;
 int GUIMenuElementSize = 20;
 int GUIoffset = 5;
 
-String	strong[] =  {"exit","1","2","3","4","5","6","7"};
 
 
+String ECMsensHeader = "  ===== ECM sensors =====";
+String ArrayECMsens[] =  {"< Exit >","Speed","RPM","Coolant temp:","Manifold air:","MAP","Barometric","Lambda"};
+int ArrayECMsensLen = 8;
+
+String ECMbitmasksHeader = "  ===== ECM bitmasks =====";
+String ArrayECMbitmasks[] =  {"< Exit >","Bit 1","Bit 2","Bit 3","Bit 4"};
+int ArrayECMbitmasksLen = 5;
+
+String ECMerrorsHeader = "  ===== ECM errors =====";
+String ArrayECMerrors[] =  {"< Exit >","Code 1","Code 2","Code 3","Code 4","Code 5"};
+int ArrayECMerrorsLen = 6;
+
+
+String TCMsensHeader = "  ===== TCM sensors =====";
+String ArrayTCMsens[] =  {"< Exit >","01","02","03"};
+int ArrayTCMsensLen = 4;
+
+String TCMbitmasksHeader = "  ===== TCM bitmasks =====";
+String ArrayTCMbitmasks[] =  {"< Exit >","Bit 1","Bit 2","Bit 3","Bit 4"};
+int ArrayTCMbitmasksLen = 5;
+
+String TCMerrorsHeader = "  ===== TCM errors =====";
+String ArrayTCMerrors[] =  {"< Exit >","Code 1","Code 2","Code 3","Code 4","Code 5"};
+int ArrayTCMerrorsLen = 6;
 
 
 
@@ -147,13 +170,13 @@ void RefreshScreen() {
 						ScreenLevelUp(1);
 						break;
 					case 2:
-						ScreenECMsens();
+						ScreenArray(ECMsensHeader, ArrayECMsens, ArrayECMsensLen);
 						break;
 					case 3:
-						ScreenECMbits();
+						ScreenArray(ECMbitmasksHeader, ArrayECMbitmasks, ArrayECMbitmasksLen);
 						break;
 					case 4:
-						ScreenECMerrors();
+						ScreenArray(ECMerrorsHeader, ArrayECMerrors, ArrayECMerrorsLen);
 						break;
 				}
 			} else if (Screen1levelSelected == 2) {
@@ -162,13 +185,13 @@ void RefreshScreen() {
 						ScreenLevelUp(1);
 						break;
 					case 2:
-						ScreenTCMsens();
+						ScreenArray(TCMsensHeader, ArrayTCMsens, ArrayTCMsensLen);
 						break;
 					case 3:
-						ScreenTCMbits();
+						ScreenArray(TCMbitmasksHeader, ArrayTCMbitmasks, ArrayTCMbitmasksLen);
 						break;
 					case 4:
-						ScreenTCMerrors();
+						ScreenArray(TCMerrorsHeader, ArrayTCMerrors, ArrayTCMerrorsLen);
 						break;
 				}
 			}
@@ -178,49 +201,8 @@ void RefreshScreen() {
 }
 
 
-void Carousel() {
-	
-	if(Screen3levelSelected > 1){
-		TFT.print(strong[Screen3levelSelected-3]);
-	}
-	
-			TFT.setCursor(0, GUIMenuElementSize*2+GUIoffset);
-			if(Screen3levelSelected >= 1)TFT.print(strong[Screen3levelSelected-2]);
-			
-			TFT.setCursor(0, GUIMenuElementSize*3+GUIoffset);
-			
-			TFT.print(strong[Screen3levelSelected-1]);
-				
-			TFT.setCursor(0, GUIMenuElementSize*4+GUIoffset);
-			if(Screen3levelSelected <= Screen3levelAmount-1)TFT.print(strong[Screen3levelSelected]);
-				
-			TFT.setCursor(0, GUIMenuElementSize*5+GUIoffset);
-			if(Screen3levelSelected < Screen3levelAmount-1) TFT.print(strong[Screen3levelSelected+1]);
-	
-	
-
-	
-	TFT.drawLine(0, 3*GUIMenuElementSize+GUIMenuElementSize, 160, 3*GUIMenuElementSize+GUIMenuElementSize, Grey);
-	TFT.drawLine(0, 3*GUIMenuElementSize, 160, 3*GUIMenuElementSize, Grey);
-}
 
 
-
-void ScreenTest() {
-
-	TFT.setCursor(0, 0);
-	TFT.print(" test");
-	
-	TFT.setCursor(0, 20);
-	TFT.print(SelectedScreen);
-	
-	TFT.setCursor(0, 40);
-	TFT.print(" test");
-	
-	TFT.setCursor(0, 60);
-	TFT.print(" test");
-
-}
 
 
 
@@ -291,26 +273,6 @@ void ScreenTCMroad() {
 	TFT.print("Transmition road");
 }
 
-/*
-void ScreenSettings() {
-	TFT.setTextSize(1);
-	TFT.setCursor(20, 0);
-	TFT.print("===== Settings =====");
-
-	TFT.setCursor(0, GUIMenuElementSize+GUIoffset);
-
-	TFT.print("Exit");
-	TFT.setCursor(0, GUIMenuElementSize*2+GUIoffset);
-
-	TFT.print("Item 1");
-	TFT.setCursor(0, GUIMenuElementSize*3+GUIoffset);
-	
-	TFT.print("Item 2");
-	TFT.setCursor(0, GUIMenuElementSize*3+GUIoffset);
-
-	TFT.drawLine(0, Screen2levelSelected*GUIMenuElementSize+GUIMenuElementSize, 160, Screen2levelSelected*GUIMenuElementSize+GUIMenuElementSize, Grey);
-	TFT.drawLine(0, Screen2levelSelected*GUIMenuElementSize+GUIMenuElementSize*2, 160, Screen2levelSelected*GUIMenuElementSize+GUIMenuElementSize*2, Grey);
-}*/
 
 
 
@@ -318,7 +280,7 @@ void ScreenSettings() {
 void ScreenECMmenu() {
 	TFT.setTextSize(1);
 	TFT.setCursor(20, 0);
-	TFT.print("===== ECM data =====");
+	TFT.print("===== TCM data =====");
 
 	TFT.setCursor(0, GUIMenuElementSize+GUIoffset);
 
@@ -367,15 +329,56 @@ void ScreenTCMmenu() {
 
 
 
-void ScreenECMsens() {
-	Screen3levelAmount = sizeof(*strong)+2;
 
-	TFT.setCursor(0, GUIoffset);
-	TFT.print("ECM Sensors   ");
-	TFT.print(SelectedScreen);
+void ArraysHandler() {
+	
+}
+
+
+void Carousel(String strong[]) {
+	
+	if(Screen3levelSelected > 2){
+		TFT.print(strong[Screen3levelSelected-3]);
+	}
+	
+	TFT.setCursor(0, GUIMenuElementSize*2+GUIoffset);
+	
+	if(Screen3levelSelected >= 2) {
+		TFT.print(strong[Screen3levelSelected-2]);
+	}
+	
+	
+	TFT.setCursor(0, GUIMenuElementSize*3+GUIoffset);
+	TFT.print(strong[Screen3levelSelected-1]);
+	TFT.setCursor(0, GUIMenuElementSize*4+GUIoffset);
+	
+	
+	if(Screen3levelSelected <= Screen3levelAmount-1){
+		TFT.print(strong[Screen3levelSelected]);
+	}
+		
+	TFT.setCursor(0, GUIMenuElementSize*5+GUIoffset);
+	
+	if(Screen3levelSelected < Screen3levelAmount-1){
+		TFT.print(strong[Screen3levelSelected+1]);
+	}
+	
+	
+	TFT.drawLine(0, 3*GUIMenuElementSize+GUIMenuElementSize, 160, 3*GUIMenuElementSize+GUIMenuElementSize, Grey);
+	TFT.drawLine(0, 3*GUIMenuElementSize, 160, 3*GUIMenuElementSize, Grey);
+}
+
+
+
+void ScreenArray(String Header, String Array[], int ArrayLenght) {
+	Screen3levelAmount = ArrayLenght;
+	//Screen3levelAmount = sizeof(Array) / sizeof(String);
+
+	TFT.setCursor(0, 0);
+	TFT.print(Header);
 	TFT.setCursor(0, GUIMenuElementSize+GUIoffset);
 	
-	Carousel();
+	Carousel(Array);
 	
 	if (Screen3levelClick == true && Screen3levelSelected == 1) {
 		Screen3levelClick = false;
@@ -385,100 +388,6 @@ void ScreenECMsens() {
 	}
 }
 
-
-void ScreenECMbits() {
-	Screen3levelAmount = sizeof(*strong)+2;
-
-	TFT.setCursor(0, GUIoffset);
-	TFT.print("ECM Bitmasks   ");
-	TFT.print(SelectedScreen);
-	TFT.setCursor(0, GUIMenuElementSize+GUIoffset);
-	
-	Carousel();
-	
-	if (Screen3levelClick == true && Screen3levelSelected == 1) {
-		Screen3levelClick = false;
-		ScreenLevelUp(2);
-	} else {
-		Screen3levelClick = false;
-	}
-}
-
-
-void ScreenECMerrors() {
-	Screen3levelAmount = sizeof(*strong)+2;
-
-	TFT.setCursor(0, GUIoffset);
-	TFT.print("ECM Errors   ");
-	TFT.print(SelectedScreen);
-	TFT.setCursor(0, GUIMenuElementSize+GUIoffset);
-	
-	Carousel();
-	
-	if (Screen3levelClick == true && Screen3levelSelected == 1) {
-		Screen3levelClick = false;
-		ScreenLevelUp(2);
-	} else {
-		Screen3levelClick = false;
-	}
-}
-
-
-void ScreenTCMsens() {
-	Screen3levelAmount = sizeof(*strong)+2;
-
-	TFT.setCursor(0, GUIoffset);
-	TFT.print("TCM Sensors   ");
-	TFT.print(SelectedScreen);
-	TFT.setCursor(0, GUIMenuElementSize+GUIoffset);
-	
-	Carousel();
-	
-	if (Screen3levelClick == true && Screen3levelSelected == 1) {
-		Screen3levelClick = false;
-		ScreenLevelUp(2);
-	} else {
-		Screen3levelClick = false;
-	}
-}
-
-
-void ScreenTCMbits() {
-	Screen3levelAmount = sizeof(*strong)+2;
-
-	TFT.setCursor(0, GUIoffset);
-	TFT.print("TCM Bitmasks   ");
-	TFT.print(SelectedScreen);
-	TFT.setCursor(0, GUIMenuElementSize+GUIoffset);
-	
-	Carousel();
-	
-	if (Screen3levelClick == true && Screen3levelSelected == 1) {
-		Screen3levelClick = false;
-		ScreenLevelUp(2);
-	} else {
-		Screen3levelClick = false;
-	}
-}
-
-
-void ScreenTCMerrors() {
-	Screen3levelAmount = sizeof(*strong)+2;
-
-	TFT.setCursor(0, GUIoffset);
-	TFT.print("TCM Errors   ");
-	TFT.print(SelectedScreen);
-	TFT.setCursor(0, GUIMenuElementSize+GUIoffset);
-	
-	Carousel();
-	
-	if (Screen3levelClick == true && Screen3levelSelected == 1) {
-		Screen3levelClick = false;
-		ScreenLevelUp(2);
-	} else {
-		Screen3levelClick = false;
-	}
-}
 
 
 
