@@ -65,7 +65,9 @@ int Screen3levelSelected = 0;
 int SelectedScreenDecode;
 bool Screen3levelClick = false;
 
-
+bool ScreenNeedFillBlack1level = true;
+bool ScreenNeedFillBlack2level = true;
+bool ScreenNeedFillBlack3level = false;
 
 int GUIMenuElementSize = 20;
 int GUIoffset = 5;
@@ -224,10 +226,10 @@ void ScreenECMroad() {
   TFT.print("%");
 
   // RPM BAR
-  int RPMbarWidth = RPM / 55 * 1.6; //160 = 100, 5500 = 100; 1.6 = 55
+  /*int RPMbarWidth = RPM / 55 * 1.6; //160 = 100, 5500 = 100; 1.6 = 55
   TFT.drawRect(0, 20, 160, 10, Grey);
   TFT.fillRect(1, 21, 158, 8, ST7735_BLACK);
-  TFT.fillRect(1, 21, RPMbarWidth-2, 8, Yellow);
+  TFT.fillRect(1, 21, RPMbarWidth-2, 8, Yellow);*/
 
   // "98 C 110 kmh"
   TFT.setCursor(0, 40);
@@ -336,31 +338,49 @@ void ArraysHandler() {
 
 
 void Carousel(String strong[]) {
+	int  x1, y1;
+	int w, h;
+	//TFT.getTextBounds(strong[Screen3levelSelected-3], 0, 0, &x1, &y1, &w, &h);
 	
+	bool FillEmptySpace = true;
+
 	if(Screen3levelSelected > 2){
 		TFT.print(strong[Screen3levelSelected-3]);
+		if (FillEmptySpace) TFT.print("           ");
+	} else {
+		if (FillEmptySpace) TFT.print("                    ");
 	}
 	
 	TFT.setCursor(0, GUIMenuElementSize*2+GUIoffset);
 	
 	if(Screen3levelSelected >= 2) {
 		TFT.print(strong[Screen3levelSelected-2]);
+		if (FillEmptySpace) TFT.print("           ");
+	} else {
+		if (FillEmptySpace) TFT.print("                    ");
 	}
 	
 	
 	TFT.setCursor(0, GUIMenuElementSize*3+GUIoffset);
 	TFT.print(strong[Screen3levelSelected-1]);
+	if (FillEmptySpace) TFT.print("                  ");
 	TFT.setCursor(0, GUIMenuElementSize*4+GUIoffset);
 	
 	
 	if(Screen3levelSelected <= Screen3levelAmount-1){
 		TFT.print(strong[Screen3levelSelected]);
+		if (FillEmptySpace) TFT.print("           ");
+	} else {
+		if (FillEmptySpace) TFT.print("                    ");
 	}
 		
 	TFT.setCursor(0, GUIMenuElementSize*5+GUIoffset);
 	
 	if(Screen3levelSelected < Screen3levelAmount-1){
 		TFT.print(strong[Screen3levelSelected+1]);
+		if (FillEmptySpace) TFT.print("           ");
+	} else {
+		if (FillEmptySpace) TFT.print("                    ");
 	}
 	
 	
@@ -465,6 +485,8 @@ void Btn2ClickEvent() {
 				Screen1levelSelected = Screen1levelSelected + 1;
 			}
 		}
+		
+		if (ScreenNeedFillBlack1level) TFT.fillScreen(ST77XX_BLACK);
 
 	} else {
 		Screen2levelSelected = SelectedScreenDecode / Screen2levelDigit;
@@ -490,6 +512,8 @@ void Btn2ClickEvent() {
 					Screen2levelSelected = Screen2levelSelected + 1;
 				}
 			}
+			
+			if (ScreenNeedFillBlack2level) TFT.fillScreen(ST77XX_BLACK);
 		
 		} else {
 			// 3rd level
@@ -508,13 +532,13 @@ void Btn2ClickEvent() {
 			} else if (Screen3levelSelected < Screen3levelAmount) {
 					SelectedScreen = SelectedScreen + Screen3levelDigit;
 					Screen3levelSelected = Screen3levelSelected + 1;
-				}
+			}
 			
-			
+			if (ScreenNeedFillBlack3level) TFT.fillScreen(ST77XX_BLACK);
 		}
 	}
 	
-	TFT.fillScreen(ST77XX_BLACK);
+	
 }
 
 
@@ -544,6 +568,8 @@ void Btn3ClickEvent() {
 				Screen1levelSelected = Screen1levelSelected - 1;
 			}
 		}
+		
+		if (ScreenNeedFillBlack1level) TFT.fillScreen(ST77XX_BLACK);
 
 	} else {
 		Screen2levelSelected = SelectedScreenDecode / Screen2levelDigit;
@@ -568,6 +594,8 @@ void Btn3ClickEvent() {
 					Screen2levelSelected = Screen2levelSelected - 1;
 				}
 			}
+			
+			if (ScreenNeedFillBlack2level) TFT.fillScreen(ST77XX_BLACK);
 		
 		} else {
 			// 3rd level
@@ -590,11 +618,10 @@ void Btn3ClickEvent() {
 				}
 			}
 
+			if (ScreenNeedFillBlack3level) TFT.fillScreen(ST77XX_BLACK);
 		}
 	}
-	
-	TFT.fillScreen(ST77XX_BLACK);
-	
+
 }
 
 
