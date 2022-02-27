@@ -22,11 +22,11 @@ Hardware SPI Pins:
  * Arduino Mega  SCK=52, SDA=51
 
 SPI pin names can be confusing. These are the alternative names for the SPI pins:
-MOSI = DIN = R/W = SDO = DI = SI = MTSR = SDA = D1 = SDI
+MOSI = SDA = SDO = DIN = R/W = DI = SI = MTSR = D1 = SDI
+SCLK = CLK = E = SCK = SCL = D0
 CS = CE = RS = SS
 DC = A0 = DO = DOUT = SO = MRST
 RESET = RST
-SCLK = CLK = E = SCK = SCL = D0
 
 
 Reference page for GFX Library: https://cdn-learn.adafruit.com/downloads/pdf/adafruit-gfx-graphics-library.pdf
