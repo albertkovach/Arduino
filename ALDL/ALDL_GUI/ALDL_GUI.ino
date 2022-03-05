@@ -18,17 +18,17 @@ Adafruit_ST7735 TFT = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
 
 bool ScrollBack = true;
 
-int Btn1Pin = 2;
-int Btn1State = 0;
-int Btn1OldState = 1;
+int BtnUpPin = 2;
+int BtnUpState = 0;
+int BtnUpOldState = 1;
 
-int Btn2Pin = 3;
-int Btn2State = 0;
-int Btn2OldState = 1;
+int BtnOkPin = 3;
+int BtnOkState = 0;
+int BtnOkOldState = 1;
 
-int Btn3Pin = 4;
-int Btn3State = 0;
-int Btn3OldState = 1;
+int BtnDwPin = 4;
+int BtnDwState = 0;
+int BtnDwOldState = 1;
 
 
 
@@ -102,9 +102,9 @@ int ArrayTCMerrorsLen = 6;
 
 
 void setup() {
-	pinMode(Btn1Pin, INPUT_PULLUP);
-	pinMode(Btn2Pin, INPUT_PULLUP);
-	pinMode(Btn3Pin, INPUT_PULLUP);
+	pinMode(BtnUpPin, INPUT_PULLUP);
+	pinMode(BtnOkPin, INPUT_PULLUP);
+	pinMode(BtnDwPin, INPUT_PULLUP);
 
 	TFTinit();
 }
@@ -431,7 +431,7 @@ void ScreenLevelUp(byte LevelToReturn) {
 
 
 
-void Btn1ClickEvent() {
+void BtnUpClickEvent() {
 	// ok
 	Screen1levelSelected = SelectedScreen / Screen1levelDigit;
 	SelectedScreenDecode = SelectedScreen - (Screen1levelSelected * Screen1levelDigit);
@@ -460,7 +460,7 @@ void Btn1ClickEvent() {
 
 
 
-void Btn2ClickEvent() { 
+void BtnOkClickEvent() { 
 	// up
 	Screen1levelSelected = SelectedScreen / Screen1levelDigit;
 	SelectedScreenDecode = SelectedScreen - (Screen1levelSelected * Screen1levelDigit);
@@ -544,7 +544,7 @@ void Btn2ClickEvent() {
 
 
 
-void Btn3ClickEvent() {
+void BtnDwClickEvent() {
 	// down
 	Screen1levelSelected = SelectedScreen / Screen1levelDigit;
 	SelectedScreenDecode = SelectedScreen - (Screen1levelSelected * Screen1levelDigit);
@@ -658,35 +658,35 @@ void Increment() {
 
 
 void BtnHandler() {
-	Btn1State = digitalRead(Btn1Pin);
-	Btn2State = digitalRead(Btn2Pin);
-	Btn3State = digitalRead(Btn3Pin);
+	BtnUpState = digitalRead(BtnUpPin);
+	BtnOkState = digitalRead(BtnOkPin);
+	BtnDwState = digitalRead(BtnDwPin);
 
-	if (Btn1State == 0) {
-		if (Btn1State != Btn1OldState) {
-			Btn1ClickEvent();
-			Btn1OldState = Btn1State;
+	if (BtnUpState == 0) {
+		if (BtnUpState != BtnUpOldState) {
+			BtnUpClickEvent();
+			BtnUpOldState = BtnUpState;
 		}
 	} else {
-		Btn1OldState = 1;
+		BtnUpOldState = 1;
 	}
 	
-	if (Btn2State == 0) {
-		if (Btn2State != Btn2OldState) {
-			Btn2ClickEvent();
-			Btn2OldState = Btn2State;
+	if (BtnOkState == 0) {
+		if (BtnOkState != BtnOkOldState) {
+			BtnOkClickEvent();
+			BtnOkOldState = BtnOkState;
 		}
 	} else {
-		Btn2OldState = 1;
+		BtnOkOldState = 1;
 	}
 	
-	if (Btn3State == 0) {
-		if (Btn3State != Btn3OldState) {
-			Btn3ClickEvent();
-			Btn3OldState = Btn3State;
+	if (BtnDwState == 0) {
+		if (BtnDwState != BtnDwOldState) {
+			BtnDwClickEvent();
+			BtnDwOldState = BtnDwState;
       }
 	} else {
-		Btn3OldState = 1;
+		BtnDwOldState = 1;
 	}
 
 }
